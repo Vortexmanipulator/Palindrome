@@ -20,22 +20,12 @@ public class PalindromeTest {
         Assertions.assertEquals(expected, answer);
     }
     @Test
-    @DisplayName("Given the input is null, return false")
+    @DisplayName("Given the input is an empty string, return false")
     void nullValue() {
         Boolean expected = false;
         Boolean answer = MyStrings.palindrome("");
         Assertions.assertEquals(expected, answer);
 
 }
-
-    @Test
-    @DisplayName("Test name")
-    void methodName() {
-
-        org.junit.jupiter.api.Assertion
-    }
-
-
-
 
 }

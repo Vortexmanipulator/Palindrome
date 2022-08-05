@@ -1,43 +1,25 @@
 package com.sparta.dr;
 
 public class MyStrings {
-    public void sayHello(){
-
-        System.out.println("Hello");
-    }
-
-    public String reverse(String stringToReverse){
+    public static String reverse(String stringToReverse) {
         String a = "";
-        for(int i = stringToReverse.length()-1; i >= 0; i--){
+        for (int i = stringToReverse.length() - 1; i >= 0; i--) {
 
             a += stringToReverse.charAt(i);
         }
-
         return a;
     }
 
-    public static Boolean palindrome(String checkPalindrome){
-        String a = "";
-
+    public static Boolean palindrome(String checkPalindrome) {
         checkPalindrome = checkPalindrome.toLowerCase();
-        for(int i = checkPalindrome.length()-1; i >= 0; i--){
+        String a = reverse(checkPalindrome);
 
-            a += checkPalindrome.charAt(i);
-        }
-        if(checkPalindrome.equals(a)){
-//             isPalindrome = true;
+        if (checkPalindrome.equals(a) && checkPalindrome != "") {
             return true;
-        }
-        else {
+        } else {
             return false;
         }
 
     }
-
-    public boolean letterExists(String strIn, String StrSearch){
-
-        return true;
-    }
-
-
 }
+
